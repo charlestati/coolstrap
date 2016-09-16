@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "All of Bootstrap's goodies without the look",
   "scripts": {
+    "prepublish": "npm run build",
     "prestart": "npm install",
     "start": "npm run build",
     "build": "npm run compile && npm run compile:minify",
