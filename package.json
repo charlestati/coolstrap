@@ -1,0 +1,25 @@
+{
+  "name": "coolstrap",
+  "version": "1.0.0",
+  "description": "All of Bootstrap's goodies without the look",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "npm run build",
+    "build": "npm run compile && npm run compile:minify",
+    "compile": "node-sass --precision 10 coolstrap.scss > coolstrap.css",
+    "compile:minify": "node-sass --precision 10 --output-style compressed coolstrap.scss > coolstrap.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlestati/coolstrap.git"
+  },
+  "author": "Charles Tatibouet <dev@charlestati.com> (https://charlestati.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charlestati/coolstrap/issues"
+  },
+  "homepage": "https://github.com/charlestati/coolstrap#readme",
+  "devDependencies": {
+    "node-sass": "^3.10.0"
+  }
+}
